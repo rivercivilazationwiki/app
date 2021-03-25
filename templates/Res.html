@@ -1,0 +1,21 @@
+<html>
+<body>
+    <h1>Delete a patient from the database</h1>
+    <nav>
+        <ul>
+            <li><a href="{{url_for('insert')}}">Insert a new patient</a></li>
+            <br>
+            <li><a href="{{url_for('search')}}">Look up info on a patient</a></li>
+            <br>
+            <li><a href="{{url_for('update')}}">Update info on a patient </a></li>
+            <br>
+            <li><a href="{{url_for('delete')}}">Delete a patient from the database</a></li>
+            <br>
+        </ul>
+    </nav>
+    <form action="" method="post">
+        Name of patient you want to delete: <input name="n">
+        <input type="submit" value="delete">
+    </form>
+</body>
+</html>

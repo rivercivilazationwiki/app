@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Create page</title>
+</head>
+<body>
+    <h1>Patient Database Form</h1>
+    <nav>
+        <ul>
+            <li><a href="{{url_for('insert')}}">Insert a new patient</a></li>
+            <br>
+            <li><a href="{{url_for('search')}}">Look up info on a patient</a></li>
+            <br>
+            <li><a href="{{url_for('update')}}">Update info on a patient </a></li>
+            <br>
+            <li><a href="{{url_for('delete')}}">Delete a patient from the database</a></li>
+            <br>
+        </ul>
+    </nav>
+    <form method="post" action="">
+        <p>Enter the info about the patient</p>
+        <p>name:  <input name="n"></p>
+        <p>Immuniazation Record:  <input name="ir"></p>
+        <p>Bloodworks: <textarea rows="4" cols="50" name="bw"></textarea></p>
+        <p>age and DOB:  <input name="age"></p>
+        <p>sex:  <input name="sex"></p>
+        <p>race and ethnicity:  <input name="race"></p>
+        <p>medecine(dosage+ side effects) and treatment:  <input name="med"></p>
+        <p>symptoms:  <textarea rows="4" cols="50" name="sympt"></textarea></p>
+        <p>Preexisting conditions(Health conditions):  <textarea rows="4" cols="50" name="hcond"></textarea></p>
+        <p>allergies:  <input name="allerg"></p>
+        <p>doctor and care team:  <textarea cols="50" rows="4" name="doc"></textarea></p>
+        <p>Location of care:  <input name="loc"></p>
+        <p>Physical charactaristics: <textarea name="phys" cols="50" rows="4"></textarea><p>
+        <p>contact information:  <textarea rows="4" cols="50" name="pnum"></textarea></p>
+        <p>billing and coding, cost, Insurence:  <input name="bill"></p>
+        <p>History of Patient:  <textarea cols="50" rows="4" name="med_hist"></textarea></p>
+        <p>Diagnosis: <input name="di"><p>
+        <p>Date of next appointment:  <input name="d2"></p>
+        <p>purpose of visit:  <input name="p"></p>
+        <p>other:  <textarea rows="4" cols="50" name="other"></textarea></p>
+        <p>  <input type="submit" value="insert"></p>
+    </form>
+</body>
+</html>

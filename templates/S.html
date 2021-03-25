@@ -1,0 +1,22 @@
+<html>
+<body>
+    <h1>Database manager for hospitals search engine</h1>
+    <nav>
+        <ul>
+            <li><a href="{{url_for('insert')}}">Insert a new patient</a></li>
+            <br>
+            <li><a href="{{url_for('search')}}">Look up info on a patient</a></li>
+            <br>
+            <li><a href="{{url_for('update')}}">Update info on a patient </a></li>
+            <br>
+            <li><a href="{{url_for('delete')}}">Delete a patient from the database</a></li>
+            <br>
+        </ul>
+    </nav>
+    <form method="post" action="{{url_for("result")}}">
+        Name: <input name="n">
+        <input type="submit" value="search">
+    </form>
+
+</body>
+</html>

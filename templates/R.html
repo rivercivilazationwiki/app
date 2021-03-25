@@ -1,0 +1,61 @@
+<html>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{url_for('insert')}}">Insert a new patient</a></li>
+            <br>
+            <li><a href="{{url_for('search')}}">Look up info on a patient</a></li>
+            <br>
+            <li><a href="{{url_for('update')}}">Update info on a patient </a></li>
+            <br>
+            <li><a href="{{url_for('delete')}}">Delete a patient from the database</a></li>
+            <br>
+        </ul>
+    </nav>
+    <table border="1">
+        <tr>
+            <th>name</th>
+            <th>immuniazationRecord</th>
+            <th>bloodWorks</th>
+            <th>age</th>
+            <th>sex</th>
+            <th>race</th>
+            <th>medicins</th>
+            <th>symptoms</th>
+            <th>HealthConditions(Preexisting conditions)</th>
+            <th>allergies</th>
+            <th>doctor</th>
+            <th>locationOfCare</th>
+            <th>physicalCondition</th>
+            <th>ContactInfo</th>
+            <th>BillingInfo</th>
+            <th>Date</th>
+            <th>diagnosis</th>
+            <th>purposeOfVisit</th>
+            <th>other</th>
+        </tr>
+        <tr>
+            <td>{{name}}</td>
+            <td>{{immuniazationRecord}}</td>
+            <td>{{bloodWorks}}</td>
+            <td>{{age}}</td>
+            <td>{{sex}}</td>
+            <td>{{race}}</td>
+            <td>{{medicins}}</td>
+            <td>{{symptoms}}</td>
+            <td>{{ealthConditions}}</td>
+            <td>{{allergies}}</td>
+            <td>{{doctor}}</td>
+            <td>{{locationOfCare}}</td>
+            <td>{{physicalCondition}}</td>
+            <td>{{ContactInfo}}</td>
+            <td>{{BillingInfo}}</td>
+            <td>{{Date}}</td>
+            <td>{{diagnosis}}</td>
+            <td>{{purposeOfVisit}}</td>
+            <td>{{other}}</td>
+
+        </tr>
+    </table>
+</body>
+</html>
